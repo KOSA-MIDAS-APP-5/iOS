@@ -16,6 +16,11 @@
 		4BB1DF1B2913563D008E7750 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 4BB1DF1A2913563D008E7750 /* SnapKit */; };
 		4BB1DF1E29135655008E7750 /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = 4BB1DF1D29135655008E7750 /* Then */; };
 		4BB1DF2129135660008E7750 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 4BB1DF2029135660008E7750 /* Moya */; };
+		4BB1DF25291359DA008E7750 /* UserClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BB1DF24291359DA008E7750 /* UserClient.swift */; };
+		4BB1DF2929135AAF008E7750 /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BB1DF2829135AAF008E7750 /* Header.swift */; };
+		4BB1DF2F29135EDA008E7750 /* MoyaLogPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BB1DF2E29135EDA008E7750 /* MoyaLogPlugin.swift */; };
+		4BB1DF3129136241008E7750 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BB1DF3029136241008E7750 /* LoginView.swift */; };
+		4BB1DF3A291365B9008E7750 /* AuthTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BB1DF39291365B9008E7750 /* AuthTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +32,11 @@
 		4BB1DF0E29135627008E7750 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4BB1DF1129135627008E7750 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4BB1DF1329135627008E7750 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4BB1DF24291359DA008E7750 /* UserClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserClient.swift; sourceTree = "<group>"; };
+		4BB1DF2829135AAF008E7750 /* Header.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
+		4BB1DF2E29135EDA008E7750 /* MoyaLogPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoyaLogPlugin.swift; sourceTree = "<group>"; };
+		4BB1DF3029136241008E7750 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		4BB1DF39291365B9008E7750 /* AuthTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +72,8 @@
 		4BB1DF0429135627008E7750 /* Attendance */ = {
 			isa = PBXGroup;
 			children = (
+				4BB1DF2A29135CC4008E7750 /* View */,
+				4BB1DF222913594F008E7750 /* Network */,
 				4BB1DF0529135627008E7750 /* AppDelegate.swift */,
 				4BB1DF0729135627008E7750 /* SceneDelegate.swift */,
 				4BB1DF0929135627008E7750 /* ViewController.swift */,
@@ -71,6 +83,97 @@
 				4BB1DF1329135627008E7750 /* Info.plist */,
 			);
 			path = Attendance;
+			sourceTree = "<group>";
+		};
+		4BB1DF222913594F008E7750 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				4BB1DF2C29135EC6008E7750 /* Plugin */,
+				4BB1DF2629135A9F008E7750 /* Header */,
+				4BB1DF24291359DA008E7750 /* UserClient.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		4BB1DF2629135A9F008E7750 /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				4BB1DF2829135AAF008E7750 /* Header.swift */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
+		4BB1DF2A29135CC4008E7750 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4BB1DF2B29135CCA008E7750 /* SwiftUI */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4BB1DF2B29135CCA008E7750 /* SwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				4BB1DF332913656F008E7750 /* Component */,
+				4BB1DF322913655F008E7750 /* Scene */,
+			);
+			path = SwiftUI;
+			sourceTree = "<group>";
+		};
+		4BB1DF2C29135EC6008E7750 /* Plugin */ = {
+			isa = PBXGroup;
+			children = (
+				4BB1DF2E29135EDA008E7750 /* MoyaLogPlugin.swift */,
+			);
+			path = Plugin;
+			sourceTree = "<group>";
+		};
+		4BB1DF322913655F008E7750 /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				4BB1DF342913657C008E7750 /* Login */,
+			);
+			path = Scene;
+			sourceTree = "<group>";
+		};
+		4BB1DF332913656F008E7750 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				4BB1DF3729136592008E7750 /* Auth */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		4BB1DF342913657C008E7750 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				4BB1DF3629136582008E7750 /* ViewModel */,
+				4BB1DF352913657F008E7750 /* View */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		4BB1DF352913657F008E7750 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4BB1DF3029136241008E7750 /* LoginView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4BB1DF3629136582008E7750 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		4BB1DF3729136592008E7750 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				4BB1DF39291365B9008E7750 /* AuthTextField.swift */,
+			);
+			path = Auth;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,7 +257,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4BB1DF2929135AAF008E7750 /* Header.swift in Sources */,
+				4BB1DF3A291365B9008E7750 /* AuthTextField.swift in Sources */,
+				4BB1DF3129136241008E7750 /* LoginView.swift in Sources */,
+				4BB1DF2F29135EDA008E7750 /* MoyaLogPlugin.swift in Sources */,
 				4BB1DF0A29135627008E7750 /* ViewController.swift in Sources */,
+				4BB1DF25291359DA008E7750 /* UserClient.swift in Sources */,
 				4BB1DF0629135627008E7750 /* AppDelegate.swift in Sources */,
 				4BB1DF0829135627008E7750 /* SceneDelegate.swift in Sources */,
 			);
