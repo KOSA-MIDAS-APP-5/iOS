@@ -21,6 +21,11 @@
 		4BB1DF2F29135EDA008E7750 /* MoyaLogPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BB1DF2E29135EDA008E7750 /* MoyaLogPlugin.swift */; };
 		4BB1DF3129136241008E7750 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BB1DF3029136241008E7750 /* LoginView.swift */; };
 		4BB1DF3A291365B9008E7750 /* AuthTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BB1DF39291365B9008E7750 /* AuthTextField.swift */; };
+		4BB1DF3D29136EA9008E7750 /* AuthButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BB1DF3C29136EA9008E7750 /* AuthButton.swift */; };
+		4BB1DF4129137052008E7750 /* SwiftUIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BB1DF4029137052008E7750 /* SwiftUIColor.swift */; };
+		4BB1DF432913736A008E7750 /* logInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BB1DF422913736A008E7750 /* logInViewModel.swift */; };
+		4BB1DF4629137683008E7750 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BB1DF4529137683008E7750 /* LoginModel.swift */; };
+		4BB1DF4A29138478008E7750 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BB1DF4929138478008E7750 /* MainView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +42,11 @@
 		4BB1DF2E29135EDA008E7750 /* MoyaLogPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoyaLogPlugin.swift; sourceTree = "<group>"; };
 		4BB1DF3029136241008E7750 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		4BB1DF39291365B9008E7750 /* AuthTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthTextField.swift; sourceTree = "<group>"; };
+		4BB1DF3C29136EA9008E7750 /* AuthButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthButton.swift; sourceTree = "<group>"; };
+		4BB1DF4029137052008E7750 /* SwiftUIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIColor.swift; sourceTree = "<group>"; };
+		4BB1DF422913736A008E7750 /* logInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = logInViewModel.swift; sourceTree = "<group>"; };
+		4BB1DF4529137683008E7750 /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
+		4BB1DF4929138478008E7750 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +82,7 @@
 		4BB1DF0429135627008E7750 /* Attendance */ = {
 			isa = PBXGroup;
 			children = (
+				4BB1DF3F29137031008E7750 /* Resource */,
 				4BB1DF2A29135CC4008E7750 /* View */,
 				4BB1DF222913594F008E7750 /* Network */,
 				4BB1DF0529135627008E7750 /* AppDelegate.swift */,
@@ -131,6 +142,7 @@
 		4BB1DF322913655F008E7750 /* Scene */ = {
 			isa = PBXGroup;
 			children = (
+				4BB1DF4829138464008E7750 /* MainView */,
 				4BB1DF342913657C008E7750 /* Login */,
 			);
 			path = Scene;
@@ -147,6 +159,7 @@
 		4BB1DF342913657C008E7750 /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				4BB1DF4429137675008E7750 /* Model */,
 				4BB1DF3629136582008E7750 /* ViewModel */,
 				4BB1DF352913657F008E7750 /* View */,
 			);
@@ -164,6 +177,7 @@
 		4BB1DF3629136582008E7750 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				4BB1DF422913736A008E7750 /* logInViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -172,8 +186,33 @@
 			isa = PBXGroup;
 			children = (
 				4BB1DF39291365B9008E7750 /* AuthTextField.swift */,
+				4BB1DF3C29136EA9008E7750 /* AuthButton.swift */,
 			);
 			path = Auth;
+			sourceTree = "<group>";
+		};
+		4BB1DF3F29137031008E7750 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				4BB1DF4029137052008E7750 /* SwiftUIColor.swift */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		4BB1DF4429137675008E7750 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4BB1DF4529137683008E7750 /* LoginModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4BB1DF4829138464008E7750 /* MainView */ = {
+			isa = PBXGroup;
+			children = (
+				4BB1DF4929138478008E7750 /* MainView.swift */,
+			);
+			path = MainView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,10 +297,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				4BB1DF2929135AAF008E7750 /* Header.swift in Sources */,
+				4BB1DF4A29138478008E7750 /* MainView.swift in Sources */,
+				4BB1DF4629137683008E7750 /* LoginModel.swift in Sources */,
+				4BB1DF3D29136EA9008E7750 /* AuthButton.swift in Sources */,
 				4BB1DF3A291365B9008E7750 /* AuthTextField.swift in Sources */,
+				4BB1DF4129137052008E7750 /* SwiftUIColor.swift in Sources */,
 				4BB1DF3129136241008E7750 /* LoginView.swift in Sources */,
 				4BB1DF2F29135EDA008E7750 /* MoyaLogPlugin.swift in Sources */,
 				4BB1DF0A29135627008E7750 /* ViewController.swift in Sources */,
+				4BB1DF432913736A008E7750 /* logInViewModel.swift in Sources */,
 				4BB1DF25291359DA008E7750 /* UserClient.swift in Sources */,
 				4BB1DF0629135627008E7750 /* AppDelegate.swift in Sources */,
 				4BB1DF0829135627008E7750 /* SceneDelegate.swift in Sources */,
